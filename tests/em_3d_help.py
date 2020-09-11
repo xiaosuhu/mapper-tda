@@ -1,10 +1,11 @@
+import os
+os.environ.setdefault('PATH', '')
 import pandas as pd
 import numpy as np
 from networkx.drawing.nx_agraph import graphviz_layout
-import trimesh
+import trimesh as tm
 import matplotlib.pyplot as plt
 import networkx as nx
-import os
 
 try:
     import params
@@ -39,7 +40,7 @@ def read_3d_obj(fname="lion_data.npy", fname_obj="lion-reference.obj"):
         return np.load(fname)
     else:
 
-        mesh = trimesh.load_mesh(fname_obj)
+        mesh = tm.load_mesh(fname_obj)
         a = np.array(mesh.vertices)
         x,y,z = -a[:,0],a[:,2],a[:,1]
         data = np.array(list(zip(x,y,z)))
