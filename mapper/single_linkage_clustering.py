@@ -154,7 +154,7 @@ class NNC(em.ClusteringTDA):
 
 
     def cdistance_norm(self, a, b):
-        return cdist(a, b, metric='seuclidean',V=self.var_vec)[0]
+        return cdist(a, b, metric='sqeuclidean',V=self.var_vec)[0]
 
 
     def merge_clusters(self, neighbor_clusters, nodes):

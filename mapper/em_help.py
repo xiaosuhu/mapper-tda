@@ -57,6 +57,11 @@ def plot_graph(G, filename='prova.png', values=None, colorbar_obj=None):
 
 def get_colors(num_colors):
     colors=[]
+
+    if num_colors==0:
+        num_colors=1
+        np.disp('num_colors equal to 0, consider resetting parameters')
+
     for i in np.arange(0., 360., 360. / num_colors):
         hue = i/360.
         lightness = (50 + np.random.rand() * 10)/100.

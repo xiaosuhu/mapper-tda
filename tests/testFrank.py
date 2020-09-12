@@ -15,10 +15,11 @@ mkdir_p(params.PLOT_PATH)
 
 fname1="/Users/xiaosuhu/Documents/Python/mapper-tda/tests/spirals.npy"
 data=np.load(fname1)
+#data_reorg=np.column_stack((data[:,2], data[:,1], data[:,0]))
 '''
 fname2="/Users/xiaosuhu/Documents/Python/mapper-tda/tests/lion_data.npy"
 datalion=np.load(fname2)
 '''
 plot_3d(data,fname='franktestsparial.png')
-test=em.ExploreMapper(data,slc.SingleLinkageClustering,ff.EccentricityP)
+test=em.ExploreMapper(data,slc.NNC,ff.AxisProj)
 

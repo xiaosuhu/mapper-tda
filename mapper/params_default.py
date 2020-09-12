@@ -11,7 +11,7 @@ DATASET_DIM = 3
 # Graph Plot Parameters
 
 PLOT_PATH = os.getcwd() + '/plots/'
-ANGLE = (20,170)
+ANGLE = (90,180)
 plot_type_str = ['spring', 'random' ,'shell' ,'spectral' ,'viz'][4]
 
 
@@ -23,7 +23,7 @@ CLUSTERING_BIN_NUMBER = 'auto'
 
 
 # Filter Function Parameters
-eccentricity_P = 2
+eccentricity_P = 1
 
 
 # Mapper Paramteres

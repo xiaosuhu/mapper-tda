@@ -14,7 +14,7 @@ DATA_PATH = os.getcwd() + '/tests/'
 # Graph Plot Parameters
 
 PLOT_PATH = os.getcwd() + '/plots/'
-ANGLE = (20,170)
+ANGLE = (90,180)
 plot_type_str = ['spring', 'random' ,'shell' ,'spectral' ,'viz'][4]
 
 
@@ -30,8 +30,8 @@ eccentricity_P = 2
 
 
 # Mapper Paramteres
-p = .1
-N = 8
+p = .04
+N = 7
 
 
 
